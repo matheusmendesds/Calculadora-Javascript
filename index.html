@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div><input type="text" class="tela" id="display" placeholder="0" disabled></input></div>
+        <div>
+            <button type="button" class="botao limpar">ac</button>
+            <button type="button" class="botao especial" value="/" onclick="addNumero('/')">/</button>
+        </div>
+        <div>
+            <button type="button" class="botao numero" value="7" onclick="addNumero('7')">7</button>
+            <button type="button" class="botao numero" value="8" onclick="addNumero('8')">8</button>
+            <button type="button" class="botao numero" value="9" onclick="addNumero('9')">9</button>
+            <button type="button" class="botao especial" value="**" onclick="addNumero('**')">*</button>
+        </div>
+        <div>
+            <button type="button" class="botao numero" value="4" onclick="addNumero('4')">4</button>
+            <button type="button" class="botao numero" value="5" onclick="addNumero('5')">5</button>
+            <button type="button" class="botao numero" value="6" onclick="addNumero('6')">6</button>
+            <button type="button" class="botao especial" value="+" onclick="addNumero('+')">+</button>
+        </div>
+        <div>
+            <button type="button" class="botao numero" value="1" onclick="addNumero('1')">1</button>
+            <button type="button" class="botao numero" value="2" onclick="addNumero('2')">2</button>
+            <button type="button" class="botao numero" value="3" onclick="addNumero('3')">3</button>
+            <button type="button" class="botao especial" value="-" onclick="addNumero('-')">-</button>
+    
+        </div>
+        <div>
+            <button type="button" class="botao numero" value="0" onclick="addNumero('0')">0</button>
+            <button type="button" class="botao especial" value="." onclick="addNumero('.')">,</button>
+            <button type="button" class="botao especial" value="*" onclick="addNumero('*')">x</button>
+            <button type="button" class="botao especial" id="resultado" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
