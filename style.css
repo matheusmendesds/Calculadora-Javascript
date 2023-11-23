@@ -11,9 +11,11 @@ body{
 }
 .container{
     border: 1px solid black;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.637);
-    width: 200px;
-    height: 300px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
     
 }
 .botao{
@@ -23,13 +25,19 @@ body{
     text-align: center;
     border-radius: 20px;
 }
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .tela{
-    background-color: white;
-    width: 180px;
-    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.685);
     box-shadow: 1px 1px 1px indigo;
-    margin: 8px 0px 10px 0px;
+    
 }
 .n{
     display: inline;
@@ -38,5 +46,5 @@ body{
     
 }
 input#display{
-    
+    margin: 5px;
 }
